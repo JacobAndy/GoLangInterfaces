@@ -10,7 +10,9 @@ import "fmt"
 // Now that a specific type is an honorary member of type "bot", you can now call printGreeting()
 type bot interface {
 	// anything that matches this interface, has access to type bot
-	getGreeting() string
+	getGreeting( /*what we expect this function to be called with string etc */ ) string // ( I can specify what the function should return within these parenthesis)
+	// ^ function name
+
 }
 
 type englishBot struct{}
